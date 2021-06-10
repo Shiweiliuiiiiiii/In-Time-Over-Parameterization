@@ -32,40 +32,29 @@ python main.py --sparse --seed 18 --sparse_init ERK  --multiplier 5 --lr 0.1 --d
 Options:
 * --sparse - Enable sparse mode (remove this if want to train dense model)
 * --sparse_init - type of sparse initialization. Choose from: uniform, ERK
-* --model (str) - type of networks, choose from RHN and LSTM (default LSTM)
-  The following models can be specified with the --model command:
-     MNIST:
-      MLPCIFAR10
-      lenet5
-      lenet300-100
+* --model (str) - type of networks
+```
+  MNIST:
+	lenet5
+	lenet300-100
 
-     CIFAR-10:
-      alexnet-s
-      alexnet-b
-      vgg-c
-      vgg-d
-      vgg-like
-      wrn-28-2
-      wrn-22-8
-      wrn-16-8
-      wrn-16-10
-      ResNet34
-* --optimizer (str) - type of optimizers, choose from sgd (Sparse NT-ASGD) and adam (default sgd)
-
-* --growth (str) - growth mode. Choose from: random, random_rnn, gradient (default random)
-* --death (str) - removing mode. Choose from: magnitude, magnitude_rnn, SET, threshold (default magnitude)
+ CIFAR-10/100：
+	alexnet-s
+	alexnet-b
+	vgg-c
+	vgg-d
+	vgg-like
+	wrn-28-2
+	wrn-22-8
+	wrn-16-8
+	wrn-16-10
+  ResNet-34
+```
+* --growth (str) - growth mode. Choose from: random, gradient, momentum
+* --death (str) - removing mode. Choose from: magnitude, SET, threshold
 * --redistribution (str) - redistribution mode. Choose from: magnitude, nonzeros, or none. (default none)
 * --density (float) - density level (default 0.33)
 * --death-rate (float) - initial pruning rate (default 0.5)
 
-## Evaluation
-
-To evaluate the pre-trained Selfish stacked-LSTM model on PTB, run:
-
-```eval
-python main.py --sparse --evaluate model_path --optimizer sgd --model LSTM --cuda --growth random --death magnitude --redistribution none --nonmono 5 --batch_size 20 --bptt 35 --lr 40 --clip 0.25 --seed 5 --emsize 1500 --nhid 1500 --nlayers 2 --death-rate 0.7 --dropout 0.65 --density 0.33 --epochs 100
-```
-
-To evaluate t
 
 
