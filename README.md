@@ -18,14 +18,14 @@ We provide the training codes In-Time Over-Parameterization (ITOP).
 To train models with SET-ITOP with a typical training time, run this command:
 
 ```
-python main.py --sparse --seed 18 --sparse_init ERK  --multiplier 1 --lr 0.1 --density 0.05 --update_frequency 1500 --epochs 250 --model vgg-c --data cifar10 --decay_frequency 30000 --batch-size 128 --growth gradient --death magnitude --redistribution none
+python main.py --sparse --seed 18 --sparse_init ERK  --multiplier 1 --lr 0.1 --density 0.05 --update_frequency 1500 --epochs 250 --model vgg-c --data cifar10 --decay_frequency 30000 --batch-size 128 --growth random --death magnitude --redistribution none
 
 ```
 
 To train models with SET-ITOP with an extended training time, change the value of --multiplier (e.g., 5 times) and run this command:
 
 ```
-python main.py --sparse --seed 18 --sparse_init ERK  --multiplier 5 --lr 0.1 --density 0.05 --update_frequency 1500 --epochs 250 --model vgg-c --data cifar10 --decay_frequency 30000 --batch-size 128 --growth gradient --death magnitude --redistribution none
+python main.py --sparse --seed 18 --sparse_init ERK  --multiplier 5 --lr 0.1 --density 0.05 --update_frequency 1500 --epochs 250 --model vgg-c --data cifar10 --decay_frequency 30000 --batch-size 128 --growth random --death magnitude --redistribution none
 
 ```
 
@@ -55,6 +55,15 @@ Options:
 * --redistribution (str) - redistribution mode. Choose from: magnitude, nonzeros, or none. (default none)
 * --density (float) - density level (default 0.33)
 * --death-rate (float) - initial pruning rate (default 0.5)
+
+### ImageNet with ResNet-50
+To train ResNet-50 on ImageNet with RigL-ITOP, run the following command:
+
+cd ImageNet
+
+CUDA_VISIBLE_DEVICES=0,1 python $1multiproc.py --nproc_per_node 2 $1main.py --multiplier 1 --growth gradient --master_port 4545 -j5 -p 500 --arch resnet50 -c fanin --update_frequency 4000 --label-smoothing 0.1 -b 64 --lr 0.1 --warmup 5 --epochs 100 --density 0.2 $2 ../../../data/ --save save/ITOP/
+
+
 
 
 
