@@ -1,6 +1,6 @@
 # In-Time-Over-Parameterization
 
-This repo includes codes for the official implementation of the paper [[ICML2021] Do We Actually Need Dense Over-Parameterization? In-Time Over-Parameterization in Sparse Training](https://arxiv.org/abs/2102.02887)
+This repo includes codes for the official implementation of the ICML 2021 paper [Do We Actually Need Dense Over-Parameterization? In-Time Over-Parameterization in Sparse Training](https://arxiv.org/abs/2102.02887)
 
 ![](ITOP.png)
 
