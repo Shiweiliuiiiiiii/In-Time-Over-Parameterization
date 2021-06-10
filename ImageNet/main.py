@@ -22,7 +22,6 @@ import sys
 
 import core
 from core import Masking, CosineDecay
-from snip import CS_ini
 
 try:
     from apex.parallel import DistributedDataParallel as DDP
