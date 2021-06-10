@@ -66,13 +66,14 @@ CUDA_VISIBLE_DEVICES=0,1 python $1multiproc.py --nproc_per_node 2 $1main.py --mu
 
 ## Citation
 If you use this library in a research paper, please cite this repository.
-
+```
 @article{liu2021we,
   title={Do we actually need dense over-parameterization? in-time over-parameterization in sparse training},
   author={Liu, Shiwei and Yin, Lu and Mocanu, Decebal Constantin and Pechenizkiy, Mykola},
   journal={arXiv preprint arXiv:2102.02887},
   year={2021}
 }
+```
 
 ## Table of Contents
 More information is coming soon.
