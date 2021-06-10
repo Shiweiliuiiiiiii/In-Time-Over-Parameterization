@@ -58,12 +58,23 @@ Options:
 
 ### ImageNet with ResNet-50
 To train ResNet-50 on ImageNet with RigL-ITOP, run the following command:
-
+```
 cd ImageNet
 
 CUDA_VISIBLE_DEVICES=0,1 python $1multiproc.py --nproc_per_node 2 $1main.py --multiplier 1 --growth gradient --master_port 4545 -j5 -p 500 --arch resnet50 -c fanin --update_frequency 4000 --label-smoothing 0.1 -b 64 --lr 0.1 --warmup 5 --epochs 100 --density 0.2 $2 ../../../data/ --save save/ITOP/
+```
 
+## Citation
+If you use this library in a research paper, please cite this repository.
 
+@article{liu2021we,
+  title={Do we actually need dense over-parameterization? in-time over-parameterization in sparse training},
+  author={Liu, Shiwei and Yin, Lu and Mocanu, Decebal Constantin and Pechenizkiy, Mykola},
+  journal={arXiv preprint arXiv:2102.02887},
+  year={2021}
+}
 
+## Table of Contents
+More information is coming soon.
 
 
