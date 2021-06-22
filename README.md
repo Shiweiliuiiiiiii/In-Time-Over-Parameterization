@@ -53,9 +53,10 @@ Options:
 * --growth (str) - growth mode. Choose from: random, gradient, momentum
 * --death (str) - removing mode. Choose from: magnitude, SET, threshold
 * --redistribution (str) - redistribution mode. Choose from: magnitude, nonzeros, or none. (default none)
-* --density (float) - density level (default 0.33)
+* --density (float) - density level (default 0.05)
 * --death-rate (float) - initial pruning rate (default 0.5)
 
+The sparse operatin is in the sparsetraining/core.py file.
 ### ImageNet with ResNet-50
 To train ResNet-50 on ImageNet with RigL-ITOP, run the following command:
 ```
