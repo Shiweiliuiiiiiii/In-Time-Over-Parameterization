@@ -56,7 +56,10 @@ Options:
 * --density (float) - density level (default 0.05)
 * --death-rate (float) - initial pruning rate (default 0.5)
 
-The sparse operatin is in the sparsetraining/core.py file.
+The sparse operatin is in the sparsetraining/core.py file. 
+
+For better sparse training performance, it is suggested to decay the learning rate at the 1/2 and 3/4 training time instead of using the default learning rate schedule in main.py. 
+
 ### ImageNet with ResNet-50
 To train ResNet-50 on ImageNet with RigL-ITOP, run the following command:
 ```
