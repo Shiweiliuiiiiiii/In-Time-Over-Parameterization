@@ -1,6 +1,6 @@
 ## In-Time-Over-Parameterization Official Pytorch implementation
 
-<img src="https://github.com/Shiweiliuiiiiiii/In-Time-Over-Parameterization/blob/main/ITOP.png" width="350" height="200">
+<img src="https://github.com/Shiweiliuiiiiiii/In-Time-Over-Parameterization/blob/main/ITOP.png" width="700" height="400">
 
 **Do We Actually Need Dense Over-Parameterization? In-Time Over-Parameterization in Sparse Training**<br>
 Shiwei Liu, Lu Yin, Decebal Constantin Mocanu, Mykola Pechenizkiy<br>
