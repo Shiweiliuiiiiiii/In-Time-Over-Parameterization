@@ -1,8 +1,10 @@
-# In-Time-Over-Parameterization
-
-This repo includes codes for the official implementation of ICML2021 [Do We Actually Need Dense Over-Parameterization? In-Time Over-Parameterization in Sparse Training](https://arxiv.org/abs/2102.02887)
+## In-Time-Over-Parameterization Official Pytorch implementation
 
 ![](ITOP.png)
+
+**Do We Actually Need Dense Over-Parameterization? In-Time Over-Parameterization in Sparse Training**<br>
+Shiwei Liu, Lu Yin, Decebal Constantin Mocanu, Mykola Pechenizkiy<br>
+https://arxiv.org/abs/2102.02887<br>
 
 This code base is created by Shiwei Liu during his Ph.D. at Eindhoven University of Technology. The implementation is heavily based on Tim Dettmers's implemenation for experiments on the sparse momentum.
 
