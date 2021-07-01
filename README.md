@@ -1,4 +1,4 @@
-## In-Time-Over-Parameterization Official Pytorch implementation
+# In-Time-Over-Parameterization Official Pytorch implementation
 
 <img src="https://github.com/Shiweiliuiiiiiii/In-Time-Over-Parameterization/blob/main/ITOP.png" width="700" height="400">
 
@@ -17,21 +17,36 @@ The implementation is heavily based on Tim Dettmers's implemenation for experime
 The library requires Python 3.6.7, PyTorch v1.0.1, and CUDA v9.0
 You can download it via anaconda or pip, see [PyTorch/get-started](https://pytorch.org/get-started/locally/) for further information. 
 
+
 ## Training 
+Our implementation includes the code for two dynamic sparse training methods SET (https://www.nature.com/articles/s41467-018-04316-3) and RigL (https://arxiv.org/abs/1911.11134). 
+
 ### CIFAR10/100
 We provide the training codes In-Time Over-Parameterization (ITOP). 
 
-To train models with ##{SET-ITOP} with a typical training time, run this command:
+To train models with **SET-ITOP** with a typical training time, run this command:
 
 ```
 python main.py --sparse --seed 18 --sparse_init ERK  --multiplier 1 --lr 0.1 --density 0.05 --update_frequency 1500 --epochs 250 --model vgg-c --data cifar10 --decay_frequency 30000 --batch-size 128 --growth random --death magnitude --redistribution none
 
 ```
+To train models with **RigL-ITOP** with a typical training time, run this command:
 
-To train models with SET-ITOP with an extended training time, change the value of --multiplier (e.g., 5 times) and run this command:
+```
+python main.py --sparse --seed 18 --sparse_init ERK  --multiplier 1 --lr 0.1 --density 0.05 --update_frequency 4000 --epochs 250 --model vgg-c --data cifar10 --decay_frequency 30000 --batch-size 128 --growth gradient --death magnitude --redistribution none
+
+```
+
+To train models with **SET-ITOP** with an extended training time, change the value of --multiplier (e.g., 5 times) and run this command:
 
 ```
 python main.py --sparse --seed 18 --sparse_init ERK  --multiplier 5 --lr 0.1 --density 0.05 --update_frequency 1500 --epochs 250 --model vgg-c --data cifar10 --decay_frequency 30000 --batch-size 128 --growth random --death magnitude --redistribution none
+
+```
+To train models with **RigL-ITOP** with an extended training time, change the value of --multiplier (e.g., 5 times) and run this command:
+
+```
+python main.py --sparse --seed 18 --sparse_init ERK  --multiplier 5 --lr 0.1 --density 0.05 --update_frequency 4000 --epochs 250 --model vgg-c --data cifar10 --decay_frequency 30000 --batch-size 128 --growth gradient --death magnitude --redistribution none
 
 ```
 
@@ -67,7 +82,7 @@ The sparse operatin is in the sparsetraining/core.py file.
 For better sparse training performance, it is suggested to decay the learning rate at the 1/2 and 3/4 training time instead of using the default learning rate schedule in main.py. 
 
 ### ImageNet with ResNet-50
-To train ResNet-50 on ImageNet with RigL-ITOP, run the following command:
+To train ResNet-50 on ImageNet with **RigL-ITOP**, run the following command:
 ```
 cd ImageNet
 
