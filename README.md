@@ -24,26 +24,26 @@ Our implementation includes the code for two dynamic sparse training methods SET
 ### CIFAR10/100
 We provide the training codes In-Time Over-Parameterization (ITOP). 
 
-To train models with **SET-ITOP** with a typical training time, run this command:
+To train models with **SET-ITOP** with a **typical** training time, run this command:
 
 ```
 python main.py --sparse --seed 18 --sparse_init ERK  --multiplier 1 --lr 0.1 --density 0.05 --update_frequency 1500 --epochs 250 --model vgg-c --data cifar10 --decay_frequency 30000 --batch-size 128 --growth random --death magnitude --redistribution none
 
 ```
-To train models with **RigL-ITOP** with a typical training time, run this command:
+To train models with **RigL-ITOP** with a **typical** training time, run this command:
 
 ```
 python main.py --sparse --seed 18 --sparse_init ERK  --multiplier 1 --lr 0.1 --density 0.05 --update_frequency 4000 --epochs 250 --model vgg-c --data cifar10 --decay_frequency 30000 --batch-size 128 --growth gradient --death magnitude --redistribution none
 
 ```
 
-To train models with **SET-ITOP** with an extended training time, change the value of --multiplier (e.g., 5 times) and run this command:
+To train models with **SET-ITOP** with an **extended** training time, change the value of --multiplier (e.g., 5 times) and run this command:
 
 ```
 python main.py --sparse --seed 18 --sparse_init ERK  --multiplier 5 --lr 0.1 --density 0.05 --update_frequency 1500 --epochs 250 --model vgg-c --data cifar10 --decay_frequency 30000 --batch-size 128 --growth random --death magnitude --redistribution none
 
 ```
-To train models with **RigL-ITOP** with an extended training time, change the value of --multiplier (e.g., 5 times) and run this command:
+To train models with **RigL-ITOP** with an **extended** training time, change the value of --multiplier (e.g., 5 times) and run this command:
 
 ```
 python main.py --sparse --seed 18 --sparse_init ERK  --multiplier 5 --lr 0.1 --density 0.05 --update_frequency 4000 --epochs 250 --model vgg-c --data cifar10 --decay_frequency 30000 --batch-size 128 --growth gradient --death magnitude --redistribution none
