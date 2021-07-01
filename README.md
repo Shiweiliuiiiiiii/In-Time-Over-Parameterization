@@ -10,7 +10,7 @@ Abstract: *In this paper, we introduce a new perspective on training deep neural
 
 This code base is created by Shiwei Liu [s.liu3@tue.nl](mailto:s.liu3@tue.nl) during his Ph.D. at Eindhoven University of Technology.<br>
 
-The implementation is heavily based on Tim Dettmers's implemenation for experiments on the sparse momentum.
+The implementation is heavily based on Tim Dettmers' implemenation for experiments on the sparse momentum.
 
 ## Requirements
 
@@ -19,7 +19,7 @@ You can download it via anaconda or pip, see [PyTorch/get-started](https://pytor
 
 
 ## Training 
-Our implementation includes the code for two dynamic sparse training methods SET (https://www.nature.com/articles/s41467-018-04316-3) and RigL (https://arxiv.org/abs/1911.11134). 
+Our implementation includes the code for two dynamic sparse training methods SET (https://www.nature.com/articles/s41467-018-04316-3) and RigL (https://arxiv.org/abs/1911.11134). The main difference is the weight regorwing method: using --growth random for SET; using --growth gradient for RigL.
 
 ### CIFAR10/100
 We provide the training codes In-Time Over-Parameterization (ITOP). 
