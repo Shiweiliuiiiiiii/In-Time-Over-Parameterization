@@ -21,9 +21,16 @@ You can download it via anaconda or pip, see [PyTorch/get-started](https://pytor
 ## Training 
 Our implementation includes the code for two dynamic sparse training methods SET (https://www.nature.com/articles/s41467-018-04316-3) and RigL (https://arxiv.org/abs/1911.11134). The main difference is the weight regorwing method: using --growth random for SET; using --growth gradient for RigL.
 
-### CIFAR10/100
-We provide the training codes In-Time Over-Parameterization (ITOP). 
 
+### CIFAR10/100
+We provide the training codes for In-Time Over-Parameterization (ITOP). 
+
+To train a dense model, we just need to remove the --sparse argument.
+
+```
+python main.py --seed 18 --sparse_init ERK  --multiplier 1 --lr 0.1 --density 0.05 --update_frequency 1500 --epochs 250 --model vgg-c --data cifar10 --decay_frequency 30000 --batch-size 128 --growth random --death magnitude --redistribution none
+
+```
 To train models with **SET-ITOP** with a **typical** training time, run this command:
 
 ```
