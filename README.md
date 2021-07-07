@@ -25,7 +25,7 @@ Our implementation includes the code for two dynamic sparse training methods SET
 ### CIFAR10/100
 We provide the training codes for In-Time Over-Parameterization (ITOP). 
 
-To train a dense model, we just need to remove the --sparse argument.
+To train a **dense model**, we just need to remove the --sparse argument.
 
 ```
 python main.py --seed 18 --sparse_init ERK  --multiplier 1 --lr 0.1 --density 0.05 --update_frequency 1500 --epochs 250 --model vgg-c --data cifar10 --decay_frequency 30000 --batch-size 128 --growth random --death magnitude --redistribution none
