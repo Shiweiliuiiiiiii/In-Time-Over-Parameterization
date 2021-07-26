@@ -97,6 +97,10 @@ CUDA_VISIBLE_DEVICES=0,1 python $1multiproc.py --nproc_per_node 2 $1main.py --mu
 ```
 change path of data ../../../data/ to the saved imagenet directory before running.
 
+Results:
+
+<img src="https://github.com/Shiweiliuiiiiiii/In-Time-Over-Parameterization/blob/main/results.jpg" width="700" height="400">
+
 ## Other Implementations
 [One million neurons](https://github.com/Shiweiliuiiiiiii/SET-MLP-ONE-MILLION-NEURONS): truly sparse SET implementation with cpu!
 
