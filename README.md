@@ -98,7 +98,8 @@ CUDA_VISIBLE_DEVICES=0,1 python $1multiproc.py --nproc_per_node 2 $1main.py --mu
 change path of data ../../../data/ to the saved imagenet directory before running.
 
 ## Other Implementations
-[truly sparse SET](https://github.com/Shiweiliuiiiiiii/SET-MLP-ONE-MILLION-NEURONS) 
+[One million neurons](https://github.com/Shiweiliuiiiiiii/SET-MLP-ONE-MILLION-NEURONS): truly sparse SET implementation with cpu!
+[Sparse Evolutionary Training](https://github.com/dcmocanu/sparse-evolutionary-artificial-neural-networks): official SET implementation with Keras.
 
 ## Citation
 If you use this library in a research paper, please cite this repository.
