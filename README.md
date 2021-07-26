@@ -99,6 +99,7 @@ change path of data ../../../data/ to the saved imagenet directory before runnin
 
 ## Other Implementations
 [One million neurons](https://github.com/Shiweiliuiiiiiii/SET-MLP-ONE-MILLION-NEURONS): truly sparse SET implementation with cpu!
+
 [Sparse Evolutionary Training](https://github.com/dcmocanu/sparse-evolutionary-artificial-neural-networks): official SET implementation with Keras.
 
 ## Citation
