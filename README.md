@@ -99,7 +99,7 @@ change path of data ../../../data/ to the saved imagenet directory before runnin
 
 Results:
 
-<img src="https://github.com/Shiweiliuiiiiiii/In-Time-Over-Parameterization/blob/main/results.jpg" width="500" height="200">
+<img src="https://github.com/Shiweiliuiiiiiii/In-Time-Over-Parameterization/blob/main/results.jpg" width="500" height="180">
 
 ## Other Implementations
 [One million neurons](https://github.com/Shiweiliuiiiiiii/SET-MLP-ONE-MILLION-NEURONS): truly sparse SET implementation with cpu!
