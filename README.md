@@ -97,6 +97,9 @@ CUDA_VISIBLE_DEVICES=0,1 python $1multiproc.py --nproc_per_node 2 $1main.py --mu
 ```
 change path of data ../../../data/ to the saved imagenet directory before running.
 
+## Other Implementations
+[truly sparse SET](https://github.com/Shiweiliuiiiiiii/SET-MLP-ONE-MILLION-NEURONS) 
+
 ## Citation
 If you use this library in a research paper, please cite this repository.
 ```
@@ -107,6 +110,7 @@ If you use this library in a research paper, please cite this repository.
   year={2021}
 }
 ```
+
 
 ## Table of Contents
 More information is coming soon.
