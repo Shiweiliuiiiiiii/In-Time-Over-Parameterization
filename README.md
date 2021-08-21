@@ -129,6 +129,8 @@ change path of data ../../../data/ to the saved imagenet directory before runnin
 
 [Sparse Evolutionary Training](https://github.com/dcmocanu/sparse-evolutionary-artificial-neural-networks): official SET implementation with Keras.
 
+[Rigging the Lottery](https://github.com/google-research/rigl): official RigL implementation with TF.
+
 ## Citation
 If you use this library in a research paper, please cite this repository.
 ```
