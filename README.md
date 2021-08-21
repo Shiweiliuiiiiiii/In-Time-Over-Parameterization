@@ -99,7 +99,17 @@ change path of data ../../../data/ to the saved imagenet directory before runnin
 
 Results on ImageNet
 
-<img src="https://github.com/Shiweiliuiiiiiii/In-Time-Over-Parameterization/blob/main/results.jpg" width="400" height="150">
+| Methods            | Sparsity |   Top-1 Acc   | Rs  | Training FLOPs | Test FLOPs |
+| -------------------|----------|---------------|-----|----------------| ---------- |
+| Dense | 0.0 |  76.8      |        1.0         |      1x(3.2e18)      | 1x(8.2e9)  |
+| RigL  | 0.8 |  75.1      |         -          |      0.25x           | 0.24x      | 
+| RigL-ITOP  | 0.8 |  75.8      |         0.93          |      0.25x           | 0.24x      | 
+
+| Methods            | Sparsity |   Top-1 Acc   | Rs  | Training FLOPs | Test FLOPs |
+| -------------------|----------|---------------|-----|----------------| ---------- |
+| Dense | 0.0 |  76.8      |        1.0         |      1x(3.2e18)      | 1x(8.2e9)  |
+| RigL  | 0.8 |  75.1      |         -          |      0.25x           | 0.24x      | 
+| RigL-ITOP  | 0.8 |  75.8      |         0.93          |      0.25x           | 0.24x      | 
 
 ## Other Implementations
 [One million neurons](https://github.com/Shiweiliuiiiiiii/SET-MLP-ONE-MILLION-NEURONS): truly sparse SET implementation with cpu!
