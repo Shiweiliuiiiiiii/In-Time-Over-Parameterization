@@ -13,8 +13,10 @@ This code base is created by Shiwei Liu [s.liu3@tue.nl](mailto:s.liu3@tue.nl) du
 The implementation is heavily based on Tim Dettmers' implemenation for experiments on the sparse momentum.
 
 ## Requirements
+Our code is highly based on the awesome sparse training library of [Sparse Momentum](https://github.com/TimDettmers/sparse_learning).
 
-The library requires Python 3.6.7, PyTorch v1.0.1, and CUDA v9.0
+The library requires Python 3.6.7, PyTorch v1.0.1, and CUDA v9.0.
+
 You can download it via anaconda or pip, see [PyTorch/get-started](https://pytorch.org/get-started/locally/) for further information. 
 
 
