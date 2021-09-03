@@ -10,10 +10,9 @@ Abstract: *In this paper, we introduce a new perspective on training deep neural
 
 This code base is created by Shiwei Liu [s.liu3@tue.nl](mailto:s.liu3@tue.nl) during his Ph.D. at Eindhoven University of Technology.<br>
 
-The implementation is heavily based on Tim Dettmers' implemenation for experiments on the sparse momentum.
+The implementation is heavily based on Tim Dettmers' implemenation for experiments on the [sparse momentum](https://github.com/TimDettmers/sparse_learning).
 
 ## Requirements
-Our code is highly based on the awesome sparse training library of [Sparse Momentum](https://github.com/TimDettmers/sparse_learning).
 
 The library requires Python 3.6.7, PyTorch v1.0.1, and CUDA v9.0.
 
