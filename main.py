@@ -14,7 +14,7 @@ import torch.backends.cudnn as cudnn
 
 import sparselearning
 from sparselearning.core import Masking, CosineDecay, LinearDecay
-from sparselearning.models import AlexNet, VGG16, LeNet_300_100, LeNet_5_Caffe, WideResNet, MLP_CIFAR10, ResNet34
+from sparselearning.models import AlexNet, VGG16, LeNet_300_100, LeNet_5_Caffe, WideResNet, MLP_CIFAR10, ResNet34, ResNet18
 from sparselearning.utils import get_mnist_dataloaders, get_cifar10_dataloaders, get_cifar100_dataloaders
 import torchvision
 import torchvision.transforms as transforms
@@ -32,6 +32,7 @@ models['MLPCIFAR10'] = (MLP_CIFAR10,[])
 models['lenet5'] = (LeNet_5_Caffe,[])
 models['lenet300-100'] = (LeNet_300_100,[])
 models['ResNet34'] = ()
+models['ResNet18'] = ()
 models['alexnet-s'] = (AlexNet, ['s', 10])
 models['alexnet-b'] = (AlexNet, ['b', 10])
 models['vgg-c'] = (VGG16, ['C', 10])
@@ -207,6 +208,8 @@ def main():
             for key in models:
                 print('\t{0}'.format(key))
             raise Exception('You need to select a model')
+        elif args.model == 'ResNet18':
+            model = ResNet18(c=100).to(device)
         elif args.model == 'ResNet34':
             model = ResNet34(c=100).to(device)
         else:
