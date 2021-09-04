@@ -77,7 +77,8 @@ Options:
 	wrn-22-8
 	wrn-16-8
 	wrn-16-10
-  ResNet-34
+	ResNet-18
+        ResNet-34
 ```
 * --growth (str) - growth mode. Choose from: random, gradient, momentum
 * --death (str) - removing mode. Choose from: magnitude, SET, threshold
