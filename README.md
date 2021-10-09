@@ -147,7 +147,6 @@ If you use this library in a research paper, please cite this repository.
 ```
 
 
-## Table of Contents
 More information is coming soon.
 
 
