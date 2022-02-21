@@ -137,16 +137,13 @@ change path of data ../../../data/ to the saved imagenet directory before runnin
 If you use this library in a research paper, please cite this repository.
 ```
 @inproceedings{liu2021we,
- author = {Liu, Shiwei and Yin, Lu and Mocanu, Decebal Constantin and Pechenizkiy, Mykola},
- booktitle = {Proceedings of the 39th International Conference on Machine Learning},
- pages = {6989--7000},
- title = {Do We Actually Need Dense Over-Parameterization? In-Time Over-Parameterization in Sparse Training},
- year = {2021},
- organization={PMLR}
+  title={Do we actually need dense over-parameterization? in-time over-parameterization in sparse training},
+  author={Liu, Shiwei and Yin, Lu and Mocanu, Decebal Constantin and Pechenizkiy, Mykola},
+  booktitle={International Conference on Machine Learning},
+  pages={6989--7000},
+  year={2021},
+  organization={PMLR}
 }
 ```
-
-
-More information is coming soon.
 
 
