@@ -21,7 +21,7 @@ You can download it via anaconda or pip, see [PyTorch/get-started](https://pytor
 
 ## Training 
 Our implementation includes the code for two dynamic sparse training methods SET (https://www.nature.com/articles/s41467-018-04316-3) and RigL (https://arxiv.org/abs/1911.11134). The main difference is the weight regorwing method: using --growth random for SET; using --growth gradient for RigL.
-
+Every time after performing pruning and regrowing, the In-Time Over-Parameterization Rate (ITOP rate) is printed as "The percentage of the total fired weights is xx", indicating the number of parameters that have been explored so far.   
 
 ### CIFAR10/100
 We provide the training codes for In-Time Over-Parameterization (ITOP). 
