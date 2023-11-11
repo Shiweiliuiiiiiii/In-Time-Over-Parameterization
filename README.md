@@ -1,4 +1,4 @@
-# In-Time-Over-Parameterization Official Pytorch implementation
+# In-Time Over-Parameterization Official Pytorch implementation
 
 <img src="https://github.com/Shiweiliuiiiiiii/In-Time-Over-Parameterization/blob/main/ITOP.png" width="500" height="300">
 
